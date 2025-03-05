@@ -11,13 +11,13 @@ import Navigation from "../components/Navigation";
 const Dashboard = () => {
   return (
     
-      < div className="flex flex-row border-2 px-2 overflow-hidden">
+      < div className="flex flex-row px-2 overflow-hidden py-4 px-5 bg-slate-300 gap-2">
 
-        <div className="flex w-2/12 border-1 h-[100vh]">
+        <div className="flex w-2/12  h-[100vh] ">
           <Navigation />
         </div>
         
-        <div className="flex flex-col w-7/12 h-[100vh] px-2 border-1">
+        <div className="flex flex-col w-7/12 h-[100vh] px-2 bg-white rounded-[10px] ">
         <h5 className="text-2xl">Dashboard</h5>
           <Overview />
           <Comparison />
@@ -26,7 +26,7 @@ const Dashboard = () => {
       
 
      
-        <div className="flex flex-col w-3/12 border-1 border-red">
+        <div className="flex flex-col w-3/12 ">
         <Summary />
         <Cummunityfeedback />
         <CustomerByDevice />

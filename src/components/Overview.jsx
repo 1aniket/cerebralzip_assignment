@@ -27,7 +27,7 @@ const Overview = () => {
   }, []);
 
   return (
-    <div className="flex flex-row w-[100%]  h-[15%] justify-center gap-3">
+    <div className="flex flex-row w-[100%]  h-[15%] justify-center gap-3 bg-white rounded-[10px]">
       {overviewData ? (<>
       <div className="w-4/12 rounded-[10px]  border-1 border-gray-300 grid grid-cols-1 px-2 py-2 content-between overflow-hidden">
         <div className="text-md flex text-gray-500">Purchase</div>
@@ -36,7 +36,7 @@ const Overview = () => {
           <div className="text-3xl font-medium">
             {convertToUsd(overviewData?.purchases).slice(1)}
           </div>
-          <div className="flex text-sm flex-column items-center rounded-[10px] text-green-700 bg-[#00800060] w-max px-2 h-max ">
+          <div className="flex text-sm flex-column items-center rounded-[10px] text-green-700 bg-[#10B98160] w-max px-2 h-max ">
             <p>+32%&ensp;</p>
             <FaArrowTrendUp />
           </div>
@@ -49,7 +49,7 @@ const Overview = () => {
           <div className="text-3xl font-medium">
             {formatCurrency(overviewData?.revenue)}
           </div>
-          <div className="flex text-sm flex-column items-center rounded-[10px] text-green-700 bg-[#00800060] w-max px-2 h-max ">
+          <div className="flex text-sm flex-column items-center rounded-[10px] text-green-700 bg-[#10B98160] w-max px-2 h-max ">
             <p>+49%&ensp;</p>
             <FaArrowTrendUp />
           </div>

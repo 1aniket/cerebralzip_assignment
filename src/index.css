@@ -5,3 +5,8 @@
     margin: 0;
     font-family: "Figtree", sans-serif;
 }
+
+body
+{
+    background-color: aliceblue;
+}

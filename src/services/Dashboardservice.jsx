@@ -1,4 +1,6 @@
 import axios from "axios";
+import supabase from "../utils/supabase";
+
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const headerData = localStorage.getItem("token");
@@ -80,5 +82,23 @@ export const fetchCustomerByDeviceData = async () => {
         "Fetching sample data failed:",
         error.response ? error.response.data : error.message
       );
+    }
+  };
+
+
+  export const fetchComparisonData = async () => {
+    
+  
+    try {
+      const { data, error } = await supabase.from('top_products').select();
+  
+      if (error) {
+        throw error;
+      }
+  
+      console.log(data);
+      return data;
+    } catch (err) {
+      console.error('Error fetching data:', err.message);
     }
   };
