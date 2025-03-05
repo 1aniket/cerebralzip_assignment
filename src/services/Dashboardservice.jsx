@@ -90,7 +90,7 @@ export const fetchCustomerByDeviceData = async () => {
     
   
     try {
-      const { data, error } = await supabase.from('top_products').select();
+      const { data, error } = await supabase.from('comparison').select();
   
       if (error) {
         throw error;
@@ -102,3 +102,5 @@ export const fetchCustomerByDeviceData = async () => {
       console.error('Error fetching data:', err.message);
     }
   };
+
+  
