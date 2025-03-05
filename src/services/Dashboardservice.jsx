@@ -96,7 +96,24 @@ export const fetchCustomerByDeviceData = async () => {
         throw error;
       }
   
-      console.log(data);
+      
+      return data;
+    } catch (err) {
+      console.error('Error fetching data:', err.message);
+    }
+  };
+
+  export const fetchTopProductsData = async () => {
+    
+  
+    try {
+      const { data, error } = await supabase.from('top_products').select();
+  
+      if (error) {
+        throw error;
+      }
+  
+      
       return data;
     } catch (err) {
       console.error('Error fetching data:', err.message);
