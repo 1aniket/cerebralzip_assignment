@@ -8,7 +8,7 @@ export const fetchOverviewData = async () => {
   try {
     const authHeader = "Basic " + headerData;
 
-    const response = await axios.get(`${BASE_URL}/sample_assignment_api_1/`, {
+    const response = await axios.get(`/api/v1/sample_assignment_api_1/`, {
       headers: {
         accept: "application/json",
         Authorization: authHeader,
@@ -28,7 +28,7 @@ export const fetchSummaryData = async () => {
   try {
     const authHeader = "Basic " + headerData;
 
-    const response = await axios.get(`${BASE_URL}/sample_assignment_api_3/`, {
+    const response = await axios.get(`/api/v1/sample_assignment_api_3/`, {
       headers: {
         accept: "application/json",
         Authorization: authHeader,
@@ -49,7 +49,7 @@ export const fetchSummaryData = async () => {
     try {
       const authHeader = "Basic " + headerData;
   
-      const response = await axios.get(`${BASE_URL}/sample_assignment_api_5/`, {
+      const response = await axios.get(`/api/v1/sample_assignment_api_5/`, {
         headers: {
           accept: "application/json",
           Authorization: authHeader,
