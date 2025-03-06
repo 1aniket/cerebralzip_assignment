@@ -27,7 +27,7 @@ const Overview = () => {
   }, []);
 
   return (
-    <div className="flex flex-row w-[100%]  h-[15%] justify-center gap-3 bg-white rounded-[10px]">
+    <div className="flex flex-row w-[100%]  h-[12%] justify-center gap-3 bg-white rounded-[10px]">
       {overviewData ? (<>
       <div className="w-4/12 rounded-[10px]  border-1 border-gray-300 grid grid-cols-1 px-2 py-2 content-between overflow-hidden">
         <div className="text-md flex text-gray-500">Purchase</div>

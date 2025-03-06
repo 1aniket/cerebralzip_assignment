@@ -10,3 +10,7 @@ body
 {
     background-color: aliceblue;
 }
+.selected-menu{
+    background-color: #fff;
+    color: black;
+}

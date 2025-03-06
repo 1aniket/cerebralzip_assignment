@@ -19,9 +19,9 @@ const TopProducts = () => {
   }, []);
 
   return (
-    <div>
-      <div className="w-[100%] flex flex-row justify-between  pb-2">
-        <div className="flex items-center mb-10 ">
+    <div >
+      <div className="w-[100%] flex flex-row justify-between pb-1">
+        <div className="flex items-center mb-3 ">
           <h1 className="text-xl font-bold ">Top Products</h1>
         </div>
         <div className="flex flex-row items-center rounded-full border-1 border-slate-300 px-2 w-max">

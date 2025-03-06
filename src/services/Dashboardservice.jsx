@@ -44,27 +44,6 @@ export const fetchSummaryData = async () => {
   }
 };
 
-// export const fetchCustomerByDeviceData = async () => {
-//     try {
-//       const authHeader = "Basic " + headerData;
-  
-//       const response = await axios.get(`${BASE_URL}/sample_assignment_api_4/`, {
-//         headers: {
-//           accept: "application/json",
-//           Authorization: authHeader,
-//         },
-//       });
-  
-     
-//       return response.data;
-//     } catch (error) {
-//       console.error(
-//         "Fetching sample data failed:",
-//         error.response ? error.response.data : error.message
-//       );
-//     }
-//   };
-
 
   export const fetchCumminityFeedbackData = async () => {
     try {
